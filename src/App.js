@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import CharactersList from './pages/CharactersList';
-import Character from './pages/Character';
+import CharactersList from './pages/CharacterList/CharactersList';
+import Character from './pages/Character/Character';
 import Search from './pages/Search';
 
 function App() {

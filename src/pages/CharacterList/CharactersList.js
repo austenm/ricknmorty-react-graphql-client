@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { useCharacters } from '../hooks/useCharacters';
+import useCharacters from '../../hooks/useCharacters';
 import "./CharacterList.css";
 
 
-export default function CharactersList() {
+const CharactersList = () => {
     const { error, loading, data } = useCharacters()
 
     if (loading) return <div>spinner...</div>
@@ -25,3 +25,5 @@ export default function CharactersList() {
         </div>
     )
 }
+
+export default CharactersList;

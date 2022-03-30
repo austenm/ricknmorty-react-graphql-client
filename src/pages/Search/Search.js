@@ -15,7 +15,7 @@ query GetCharacterLocations($name: String!){
 }
 `
 
-export default function Search() {
+const Search = () => {
     const [name, setName] = useState("")
     const [getLocations, { loading, error, data, called }] = useLazyQuery(GET_CHARACTER_LOCATIONS, {
         variables: {
@@ -47,3 +47,5 @@ export default function Search() {
         </div>
     )
 }
+
+export default Search;
